@@ -1,0 +1,444 @@
+.header{
+    background-color: rgba(10, 10, 10, 0.123);
+    height: 150px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.logo img{
+    width: 100%;
+}
+.nav ul{
+    
+    list-style: none;
+  
+}
+.nav li{
+    margin-left: 50px;
+    position: relative;    
+}
+.nav li a{
+    text-decoration: none;
+    color: #272D4E;
+}
+.nav li:hover a{
+    color: rgba(255, 255, 255, 0.678);
+}
+.img-menu{
+    display: inline;    
+}
+.img-menu img{
+    height: 24px;
+    position: absolute;
+    top:-60px;
+    left: -30px;
+    visibility: hidden;
+    opacity: 0;
+}
+.nav li:hover img{
+    top: 0px;
+    left: -30px;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.sub-menu{
+    background-color: rgba(8, 8, 8, 0.274);
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    display: none;  
+    padding: 12px; 
+}
+.sub-menu li{
+    margin: 0px;
+}
+.sub-menu li:hover a{
+    text-decoration: underline;
+}
+.nav li:hover .sub-menu{
+    display: block;
+}
+/* BANNER */
+.banner{
+    height: 200vh;
+    background-image: url("../img/light.jpg");
+    background-position: 0px -300px;
+    background-size: cover;
+    position: relative;
+}
+.banner h1{
+    color: white;
+    font-family: Chelsea Market;
+    top: 300px;
+    left: 400px;
+    position: absolute;
+    font-size: 150px;
+}
+.top-banner img{
+    top: 200px;
+    left: 450px;
+    position: absolute;
+    height: 350px;
+    z-index: 1500;
+    display: none;
+}
+.top-banner:hover h1{
+    color: rgb(243, 243, 196);
+    transition: 0.5s;
+}
+.top-banner:hover img{
+    display: block;
+    transition: 0.5s;
+}
+.banner img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.logo:hover .video1{
+    visibility: visible;
+    opacity: 1;
+}
+.banner video{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+.text-box{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    padding: 24px 24px 48px 24px;
+}
+.text-box p{
+    margin: 24px 0px 50px 0px;
+}
+.text-box h2{
+    color: white;
+}
+.text-box a{
+    margin: 12px;;
+}
+/* PHILOSOPHY */
+.philosophy{
+    background-image: url("../img/philobg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh; 
+    padding-top: 70px;   
+}
+.content-philo p{
+    margin: 24px;
+}
+.more-info:hover{
+    background-color: rgb(41, 118, 124);
+}
+.philo-blk{
+    height: 400px;
+    width: 60%;
+    background-image: url("../img/philo-blk.JPG");
+    background-size: cover;
+    background-position: center; 
+    border-radius: 50%;
+    position: relative;
+}
+
+.philo{
+    height: 70%;
+    width: 70%;
+    background-image: url("../img/philo.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transform: translate(22%,22%);
+    position: absolute;
+    z-index: 8000;
+    visibility: visible;
+    opacity: 1;
+}
+.philo:hover{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+.galery{
+    background: rgb(36,107,144);
+    background: linear-gradient(15deg, rgba(36,107,144,1) 3%, rgba(248,250,250,1) 84%);
+    width: 100%;
+    
+}
+.infor{
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(33, 107, 52, 0.473);
+}
+.infor img{
+    height: 100%;
+    transition: 1s;
+}
+.infor p{
+    background-color: rgba(87, 126, 163, 0.411);
+    padding: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+.infor:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+.infor:hover img{
+    height: 120%;
+}
+/* EVENT */
+.event{
+    background-image: url("../img/bg-event.png"), url("../img/race2.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain, 100%;
+    height: 100vh;
+    position: relative;
+}
+.lightway{
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    overflow: hidden;
+    z-index: 500;
+}
+.lightway img{
+    width: 100%;
+}
+.feature-event:hover .lightway{
+    left: 50px;
+    top: 200px;
+    transition: 1.5s;
+    transition-delay: 0.2s;
+}
+.join-us{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 450px;
+    top: 250px;
+    overflow: hidden;
+    z-index: 400;
+}
+.join-us img{
+    width: 100%;
+}
+.content-lightway{
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 32px;
+}
+.event h2{
+    padding-top: 24px;
+    color: white;
+}
+.event h4{
+    color: #94A2B3;
+    font-size: 16px;
+}
+.content-lightway p{
+    position: absolute;
+    top: 370px;
+    padding-right:24px;
+    line-height: 16px;
+    font-size: 14px;
+}
+.content-lightway a{
+    position: absolute;
+    bottom: 24px;
+    right: 32px;
+    color: #94A2B3;
+    font-size: 14px;
+}
+.content-lightway a:hover{
+    background-color: rgba(37, 89, 124, 0.877);
+}
+
+
+/* SUCCESS STORIES */
+.success{
+    background-image: url("../img/storybg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 110vh;
+    padding: 80px 0px 100px 0px;
+}
+.story {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-radius:0 30%;
+}
+.story1 {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-radius:20%;
+}
+
+.icon-story p{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(226, 228, 198, 0.637);
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+    width: 100%;
+    height: 52px;
+    padding: 12px 0px 12px 56px;
+}
+.story img{
+   width: 100%;
+}
+.story1 img{
+    width: 100%;
+ }
+.icon-story{
+    height: 52px;
+    width: 100%;
+    bottom: 0px;
+    overflow: hidden;
+    position: absolute;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.icon-story img{
+    width: 20px;
+    margin-left: 12px;
+    bottom: 12px;
+    right: 18px;
+    position: absolute;
+}
+.position1{
+    right: 50px !important;
+}
+.story:hover .icon-story{
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+}
+.story1:hover .icon-story{
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+}
+.content-success {
+    position: relative;
+    height: 525px;
+    overflow: hidden;
+    border-radius: 30% 0;
+}
+.content-success img{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+}
+
+.content-success h2{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    color: rgb(248, 248, 248);
+    background-color: rgba(226, 228, 198, 0.418);
+ 
+}
+
+.text{
+    background-color: rgba(226, 228, 198, 0.637);
+    color: rgb(27, 27, 27);
+    position: absolute;
+    bottom: 0px;
+    padding: 24px;
+    height: 0px;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+.content-success:hover .text{
+    height: 200px;
+    visibility: visible;
+    opacity: 1;
+}
+.content-success:hover h2{
+    display: none;
+}
+/* FOOTER */
+.footer{
+    padding: 30px 0px 0px 0px;
+    background: url("../img/event.jpg"), rgba(0, 0, 0, 0.877);
+    background-position: center -500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+}
+.footer h4{
+    color: rgba(255, 255, 255, 0.815);
+}
+.copyright{
+    background-color: rgba(41, 39, 39, 0.767);
+    padding: 10px 0px;
+}
+.copy{
+    width: 18px;
+}
+.copy img{
+    width: 100%;
+}
+.name p{
+    color: rgb(180, 177, 177);
+}
+.left-footer a{
+    display: flex;
+    text-decoration: none;
+    color: #94A2B3;
+    padding-left: 180px !important;
+}
+.left-footer a:hover{
+    font-weight: bold;
+    font-style: italic;
+}
+.logo-footer{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.logo-footer img{
+    height: 100px;
+}
+.logo-footer:hover img{
+    transform: rotateY(360deg);
+    transition: 1s;
+}
